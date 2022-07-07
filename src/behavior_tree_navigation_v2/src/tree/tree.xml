@@ -1,0 +1,15 @@
+ <root main_tree_to_execute = "MainTree" >
+     <BehaviorTree ID="MainTree">
+        <Sequence name="root_sequence">
+            <!-- How to load different maps? -->
+            <LoadMap />
+            <Localization message="{initial_pose}"/>
+            <!-- Get tasks list and waiting time. -->
+            <TaskListener message="{task}"/>
+            <ExecuteTask message="{task}"/>
+            <Inverter>
+                <MoveToBase message="{initial_pose}"/>
+            </Inverter>
+        </Sequence>
+     </BehaviorTree>
+ </root>

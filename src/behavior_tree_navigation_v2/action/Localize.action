@@ -1,0 +1,8 @@
+# Define the goal. Which will expect 0 for False, 1 for True
+int8 start
+----
+# define the result with *status* to show successful or not. 0 for False, 1 for True
+string pose
+---
+# define a feedback message which will provide incremental status report of the progress of the action.
+int16 status

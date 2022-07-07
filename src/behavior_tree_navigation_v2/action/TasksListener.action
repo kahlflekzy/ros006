@@ -1,0 +1,9 @@
+# Define the goal. Which will expect 0 for False, 1 for True
+int8 start
+----
+# define the result with *tasks* specifying a serialized PoseTimeArray.
+# if tasks is empty, stop
+string tasks
+---
+# define a feedback message which will provide incremental status report of the progress of the action.
+int16 status

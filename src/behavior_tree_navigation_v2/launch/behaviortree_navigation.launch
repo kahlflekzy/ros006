@@ -1,0 +1,10 @@
+<launch>
+    <arg name="package" value="$(find behavior_tree_navigation_v2)"/>
+    <!-- behavior_tree_navigation_v2   -->
+    <node pkg="behavior_tree_navigation_v2" name="map_server_node" type="map_server_node.py" output="screen"/>
+    <node pkg="behavior_tree_navigation_v2" name="localization_node" type="localization_node.py" output="screen"/>
+    <node pkg="behavior_tree_navigation_v2" name="task_listener_node" type="task_listener_node.py" output="screen"/>
+    <node pkg="behavior_tree_navigation_v2" name="execute_task_node" type="execute_task_node.py" output="screen"/>
+    <node pkg="behavior_tree_navigation_v2" name="move_to_base_node" type="move_to_base_node.py" output="screen"/>
+    <node pkg="behavior_tree_navigation_v2" name="behaviortree" type="behaviortree_node" args="$(arg package)" output="screen"/>
+</launch>

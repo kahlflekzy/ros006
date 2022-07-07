@@ -1,0 +1,8 @@
+# Define the goal.
+string tasks
+----
+# define the result with, 0 success, otherwise index of failed goal.
+int8 status
+---
+# define a feedback message which will provide incremental status report of the progress of the action.
+string status
